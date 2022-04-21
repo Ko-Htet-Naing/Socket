@@ -8,11 +8,10 @@ const io = new Server(server, {
         origin: "*"
     }
 });
-
+app.get('/', (req, rep) => {
+    rep.sendFile(__dirname + '/index.html');
+})
 let port = process.env.PORT || 3000;
-app.get('/', (req, res) => {
-    console.log("Started on port " + port)
-});
 io.on('connection', (socket) => {
     console.log('A user Connected' + socket.id)
     socket.on('disconnect', () => {
