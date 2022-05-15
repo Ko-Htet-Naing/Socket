@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapper {
+  width: 700px;
+  height: 500px;
+  background-color: #74ebd5;
+  border-radius: 5px;
+}
+.nav-bar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar .logo {
+  width: 80px;
+  height: 50px;
+}
+.logo img {
+  width: 100%;
+}
+.nav-bar ul,
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+}
+.nav-bar li {
+  display: inline-block;
+}
+.sidebar {
+  text-align: center;
+  padding: 10px 5px;
+}
+.sidebar h4 {
+  margin: 10px 0;
+}
+.sidebar p {
+  font-weight: 600;
+}
+.sidebar ul {
+  text-align: left;
+  width: 80%;
+  margin: 40px auto;
+}
+.sidebar li {
+  margin-top: 10px;
+}
+.sidebar svg {
+  width: 20px;
+}
+.chat-area {
+  display: flex;
+  justify-content: space-between;
+  height: 78%;
+}
+.chat-box div {
+  margin: 0 20px;
+}
+.chat-area .sidebar {
+  background-color: #5ce0c8;
+  flex: 1;
+}
+.chat-area .chat-box {
+  background-color: #fcfdff;
+  flex: 2;
+}
+.footer {
+  margin-top: 6px;
+}
+.footer form {
+  display: flex;
+}
+.footer input,
+button {
+  padding: 4px;
+}
+.footer input {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  flex: 3;
+  padding: 5px 0;
+  margin-left: 5px;
+}
+.footer button {
+  flex: 1;
+  border: none;
+  background-color: #5ce0c8;
+  margin: 0 2px;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    color: green;
+  }
+}
+#chat-box-items {
+  margin-right: 20px;
+}
+#chat-box-items .message:nth-child(odd) {
+  margin-bottom: 20px;
+  text-align: right;
+}
+.chat-box {
+  overflow: auto;
+}
+#chat-box-items {
+  margin-top: 20px;
+}
+#chat-box-items span {
+  font-style: italic;
+  font-size: 10px;
+}
+#chat-box-items .welcome {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.room-type {
+  margin-top: 10px;
+}
+.room-type p,
+.user-join p {
+  font-size: 20px;
+}
+.room-type li,
+.user-join li {
+  text-align: center;
+  font-size: 15px;
+}

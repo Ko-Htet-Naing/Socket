@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="css/chatRoom.css" />
+    <script
+      src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+      integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="img/download.png" alt="App logo" />
+        </div>
+        <div class="nav-item">
+          <ul>
+            <li><a href="#" id="leave">Leave</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="chat-area">
+        <div class="sidebar">
+          <h4>Welcome From Chat Room</h4>
+          <div class="room-type">
+            <p>Room Type</p>
+            <h4 id="room-manager"></h4>
+          </div>
+          <div class="user-join">
+            <p>Users Join</p>
+            <ul id="user-manager">
+              <li>Ko Htet</li>
+              <li>Jonny Dog</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div id="chat-box-items"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <form id="message-form">
+          <input type="text" id="msg" placeholder="Enter message" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/chatRoom.js"></script>
+  </body>
+</html>

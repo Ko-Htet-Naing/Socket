@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Chat</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+      integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Login Page  -->
+    <div class="wrapper justify-content">
+      <section class="login-text-box justify-content">
+        <div class="hero-text-box">
+          <h3>Chatting ပြလုပ်ရန် လိုအပ်သည်များကို ဖြည့်ပါ....</h3>
+          <p>ကြိုဆိုပါတယ်</p>
+        </div>
+        <form action="chatRoom.html">
+          <input
+            autocomplete="off"
+            type="text"
+            id="username"
+            name="username"
+            placeholder="အသုံးပြုသူအမည်"
+          />
+          <br />
+          <div class="select">
+            <select name="type" id="type">
+              <option value="Public">Public</option>
+              <option value="Private">Private</option>
+            </select>
+          </div>
+          <div class="error-box"></div>
+          <div class="submit-box">
+            <button type="submit">Start</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
